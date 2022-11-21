@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(163, 163, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.quiz-container {
+    background-color: white;
+    height: 25rem;
+    width: 35rem;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: 550;
+    width: 100%;
+    border-bottom: 4px solid #e0e0e0;
+    text-align: center;
+    padding: 15px;
+}
+
+footer {
+    border-top: 4px solid #ebe9e9;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+footer > .question-count {
+    width: 10rem;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+footer > button {
+    background-color: rgb(53, 53, 247);
+    outline: none;
+    height: 1.8rem;
+    color: white;
+    border: none;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-right: 10px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer > button:hover {
+    background-color: rgb(4, 4, 252);
+}
+
+#nextBtn {
+    background-color: rgb(53, 53, 247);
+    outline: none;
+    height: 1.8rem;
+    color: white;
+    border: none;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-right: 10px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer > #nextBtn:hover {
+    background-color: rgb(4, 4, 252);
+}
+
+.question-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30rem;
+    align-self: center;
+    padding-top: 15px;
+}
+
+.question-text {
+    font-size: 1.3rem;
+}
+
+ul, li {
+    padding: 10px 0;
+}
+
+li {
+    padding-left: 10px;
+    display: block;
+    border: 2px solid #cacaca;
+    background-color: rgb(250, 242, 242);
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li:first-child {
+    margin-top: 0px;
+}
+
+li:hover {
+    border: 2px solid #969595;
+    background-color: rgb(224, 202, 202);
+}
+
+li.active {
+    border: 2px solid #969595;
+    background-color: rgb(224, 202, 202);
+}
+
+li.correct {
+    border: 2px solid rgb(4, 190, 4);
+    color: rgb(4, 190, 4);
+    background-color: rgb(217, 233, 217);
+}
+
+li.incorrect {
+    border: 2px solid rgb(216, 4, 4);
+    color: rgb(216, 4, 4);
+    background-color: rgb(229, 186, 186);
+}
+
+li.incorrect::after {
+    content: "×";
+    float: right;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid rgb(216, 4, 4);
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+li.correct::after {
+    content: "✔";
+    float: right;
+    margin-right: 20px;
+    font-weight: bold;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid rgb(4, 190, 4);
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+li.correct::after, li.incorrect::after {
+    transform: translateY(-3px);
+}

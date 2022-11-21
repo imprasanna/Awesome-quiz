@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <header>
+            Awesome Quiz
+        </header>
+        <div class="question-body">
+            <div class="question-text" id="questionText">
+                Question
+            </div>
+            <ul>
+                <li class="answer" id="opt1">
+                    Option 1
+                </li>
+                <li class="answer" id="opt2">
+                    Option 2
+                </li>
+                <li class="answer" id="opt3">
+                    Option 3
+                </li>
+                <li class="answer" id="opt4">
+                    Option 4
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <div class="question-count"  id="questionCount">
+                question count
+            </div>
+            <button>Submit</button>
+            <button style="display: none;" id="nextBtn">Next Question</button>
+            <button style="display: none;" id="againBtn">PlayAgain</button>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
