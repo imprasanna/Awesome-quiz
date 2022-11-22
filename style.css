@@ -184,3 +184,268 @@ li.correct::after {
 li.correct::after, li.incorrect::after {
     transform: translateY(-3px);
 }
+
+
+
+
+
+
+
+@media(max-width: 768px) {
+    .quiz-container {
+        width: 30rem;
+        height: calc((25/35)*30rem);
+    }
+
+    header {
+        font-size: 1.3rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .question-text {
+        font-size: 1.1rem;
+    }
+
+    .question-body {
+        width: calc(30/35*30rem);
+    }
+
+    ul, li {
+        font-size: 0.9rem;
+        padding: 8px 0;
+    }
+
+    li {
+        padding-left: 5px;
+    }
+
+    .question-count {
+        font-size: 0.9rem;
+    }
+
+    footer > .submit-button, #nextBtn, #againBtn {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+    }
+}
+
+
+
+
+@media(max-width: 560px) {
+    .quiz-container {
+        width: 25rem;
+        height: calc((25/35)*25rem);
+    }
+
+    header {
+        font-size: 1.1rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .question-text {
+        font-size: 1rem;
+    }
+
+    .question-body {
+        width: calc(30/35*25rem);
+    }
+
+    ul, li {
+        font-size: 0.8rem;
+        padding: 5px 0;
+    }
+
+    li {
+        padding-left: 4px;
+    }
+
+    .question-count {
+        font-size: 0.8rem;
+    }
+
+    footer > .submit-button, #nextBtn, #againBtn {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    footer > .question-count, .submit-button, #nextBtn, #againBtn {
+        transform: translateY(-25%);
+    }
+
+    li.incorrect::after {
+        font-size: 1rem;
+        height: 15px;
+        width: 15px;
+    }
+
+    li.correct::after {
+        font-size: 0.8rem;
+        height: 15px;
+        width: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li.correct::after, li.incorrect::after {
+        transform: translateY(-1.5px);
+    }
+    
+}
+
+
+
+@media(max-width: 425px) {
+    .quiz-container {
+        width: 20rem;
+        height: 22rem;
+    }
+
+    header {
+        font-size: 1.1rem;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .question-text {
+        font-size: 1.1rem;
+    }
+
+    .question-body {
+        width: calc(30/35*21rem);
+    }
+
+    ul, li {
+        font-size: 0.9rem;
+        padding: 5px 0;
+    }
+
+    li {
+        padding-left: 4px;
+    }
+
+    .question-count {
+        font-size: 0.9rem;
+    }
+
+    footer > .submit-button, #nextBtn, #againBtn {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+        margin-right: 0;
+        height: 2rem;
+    }
+
+    footer > .question-count, .submit-button, #nextBtn, #againBtn {
+        transform: translateY(8%);
+    }
+
+    footer > .question-count {
+        margin-left: 0;
+    }
+
+    
+}
+
+
+
+@media(max-width: 350px) {
+    .quiz-container {
+        width: 18rem;
+        height: 22rem;
+    }
+
+    header {
+        font-size: 1.1rem;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .question-text {
+        font-size: 1.05rem;
+    }
+
+    .question-body {
+        width: calc(30/35*19.5rem);
+    }
+
+    ul, li {
+        font-size: 0.9rem;
+        padding: 5px 0;
+    }
+
+    li {
+        padding-left: 4px;
+    }
+
+    .question-count {
+        font-size: 0.9rem;
+    }
+
+    footer > .submit-button, #againBtn {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    footer > .question-count, .submit-button, #nextBtn, #againBtn {
+        transform: translateY(8%);
+    }
+
+    #nextBtn {
+        font-size: 0.75rem;
+    }
+
+
+}
+
+
+@media(max-width: 300px) {
+    .quiz-container {
+        width: 16rem;
+        height: 22rem;
+    }
+
+    header {
+        font-size: 1.1rem;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .question-text {
+        font-size: 1.05rem;
+    }
+
+    .question-body {
+        width: calc(30/35*17rem);
+    }
+
+    ul, li {
+        font-size: 0.9rem;
+        padding: 5px 0;
+    }
+
+    li {
+        padding-left: 4px;
+    }
+
+    .question-count {
+        font-size: 0.8rem;
+    }
+
+    footer > .submit-button, #againBtn {
+        font-size: 0.8rem;
+        padding: 5px 20px;
+    }
+
+    footer #nextBtn {
+        font-size: 0.75rem;
+        padding: 5px 20px;
+    }
+
+    footer > .submit-button, #nextBtn, #againBtn {
+        padding: 5px 20px;
+        height: 2.2rem;
+    }
+}
